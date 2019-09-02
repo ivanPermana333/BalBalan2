@@ -9,6 +9,8 @@ public class ModelJadwal {
     private String strTime;
 
 
+
+
     public String getIdEvent() {
         return idEvent;
     }
@@ -56,4 +58,6 @@ public class ModelJadwal {
     public void setStrTime(String strTime) {
         this.strTime = strTime;
     }
+
+
 }

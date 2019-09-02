@@ -38,8 +38,6 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
     @Override
     public void onBindViewHolder(@NonNull ScheduleViewHolder holder, int position) {
         holder.txtHome.setText(dataList.get(position).getStrHomeTeam());
-
-
         holder.txtAway.setText(dataList.get(position).getStrAwayTeam());
         holder.txtDate.setText(dataList.get(position).getStrDate());
         holder.txtTime.setText(dataList.get(position). getStrTime());
@@ -58,6 +56,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
             super(itemView);
             txtHome = (TextView) itemView.findViewById(R.id.txtstrHomeTeam);
             txtAway = (TextView) itemView.findViewById(R.id.txtstrAwayTeam);
+
             txtDate = (TextView) itemView.findViewById(R.id.txtstrDate);
             txtTime = (TextView) itemView.findViewById(R.id.txtTime);
         }
